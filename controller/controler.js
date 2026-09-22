@@ -26,7 +26,7 @@ async function handelsignup(req , res){
     });
     console.log(user);
 
-    return res.redirect("main");
+    return res.redirect("/main");
 };
 
 async function handellogin(req ,res){
@@ -50,9 +50,11 @@ async function handellogin(req ,res){
 
     if(realpass === password){
 
-        const sessionId = uuidv4();
-        setUser(sessionId , user);
-        res.cookie("uid" , sessionId);
+        const  token = setUser(user);
+        
+        console.log(token);
+        
+        res.cookie("uid" , token);
        return res.redirect("main");
     }
 

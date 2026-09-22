@@ -6,12 +6,14 @@ const router = express.Router();
 
 router.get('/' , handelserve);
 
-router.get('/signup' , showsignup);
-router.get('/login' , showlogin)
-
 router.post('/signup' ,  handelsignup);
-router.post('/login' , handellogin);
+router.post('/login' ,  handellogin);
 
-router.get('/main' , showmain);
+router.get('/signup' ,  showsignup);
+router.get('/login' ,  showlogin)
+
+
+
+router.get('/main' , restrictologin ,  showmain);
 
 module.exports = router;
