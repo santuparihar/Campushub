@@ -6,6 +6,14 @@ async function handelserve(req , res){
     res.render("index");
 };
 
+async function showsignup(req , res){
+    res.render("signup");
+}
+
+async function showlogin(req , res){
+    res.render("login");
+}
+
 async function handelsignup(req , res){
     const {name , email , course , gender , password} = req.body;
 
@@ -18,7 +26,7 @@ async function handelsignup(req , res){
     });
     console.log(user);
 
-   return res.redirect("/").render("main");
+    return res.redirect("main");
 };
 
 async function handellogin(req ,res){
@@ -45,7 +53,7 @@ async function handellogin(req ,res){
         const sessionId = uuidv4();
         setUser(sessionId , user);
         res.cookie("uid" , sessionId);
-       return res.render("main");
+       return res.redirect("main");
     }
 
     return  res.send(`<script>
@@ -54,8 +62,15 @@ async function handellogin(req ,res){
         </script>`);
 }
 
+async function showmain(req , res){
+    res.render("main");
+}
+
 module.exports = {
     handelserve,
+    showsignup,
+    showlogin,
     handellogin,
     handelsignup,
+    showmain,
 };
