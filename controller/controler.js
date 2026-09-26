@@ -1,9 +1,10 @@
+const { checkUser } = require('../middlewares/auth');
 const User = require('../model/schema');
-const {setUser} = require('../service/auth');
+const {setUser , getUser} = require('../service/auth');
 const {v4 : uuidv4} = require("uuid");
 
 async function handelserve(req , res){
-    res.render("index");
+   return res.render("index");
 };
 
 async function showsignup(req , res){
@@ -11,25 +12,30 @@ async function showsignup(req , res){
 }
 
 async function showlogin(req , res){
-    res.render("login");
+   return res.render("login");
 }
 
 async function handelsignup(req , res){
     const {name , email , course , gender , password} = req.body;
 
-    const user = User.create({
+    const user =  await User.create({
         name,
         email,
         course,
         gender,
         password,
     });
-    console.log(user);
+
+    
+    const token  = setUser(user);
+
+    res.cookie("uid" , token);
 
     return res.redirect("/main");
 };
 
 async function handellogin(req ,res){
+  
    const email = req.body.email;
    const password = req.body.password;
 
@@ -54,8 +60,11 @@ async function handellogin(req ,res){
         
         console.log(token);
         
-        res.cookie("uid" , token);
-       return res.redirect("main");
+        res.cookie("uid" , token , {
+            httpOnly : true,
+            maxAge : 2 * 60 * 1000,
+        });
+       return res.redirect("/main");
     }
 
     return  res.send(`<script>
@@ -65,7 +74,9 @@ async function handellogin(req ,res){
 }
 
 async function showmain(req , res){
-    res.render("main");
+    res.render("main" , {
+        user : req.user
+    });
 }
 
 module.exports = {
