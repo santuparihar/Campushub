@@ -1,0 +1,323 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CampusHub - AI Assistant</title>
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link rel="stylesheet" href="/ai.css">
+</head>
+
+<body>
+
+    <!-- SIDEBAR -->
+
+    <aside class="sidebar">
+
+        <div class="logo">
+
+            <div class="logo-icon">
+                <i class="fa-solid fa-graduation-cap"></i>
+            </div>
+
+            <span>
+                Campus<span>Hub</span>
+            </span>
+
+        </div>
+
+
+        <nav class="nav">
+
+            <a href="/main">
+                <i class="fa-solid fa-house"></i>
+                <span>Dashboard</span>
+            </a>
+
+            <a href="/profile">
+                <i class="fa-solid fa-user"></i>
+                <span>Profile</span>
+            </a>
+
+            <a href="/events">
+                <i class="fa-solid fa-calendar-days"></i>
+                <span>Events</span>
+            </a>
+
+            <a href="/ai" class="active">
+                <i class="fa-solid fa-robot"></i>
+                <span>AI Assistant</span>
+            </a>
+
+            <a href="/community">
+                <i class="fa-solid fa-users"></i>
+                <span>Community</span>
+            </a>
+
+            <a href="/resources">
+                <i class="fa-solid fa-book"></i>
+                <span>Resources</span>
+            </a>
+
+        </nav>
+
+
+        <div class="sidebar-bottom">
+
+            <a href="/settings">
+                <i class="fa-solid fa-gear"></i>
+                <span>Settings</span>
+            </a>
+
+            <a href="/logout" class="logout">
+                <i class="fa-solid fa-right-from-bracket"></i>
+                <span>Logout</span>
+            </a>
+
+        </div>
+
+    </aside>
+
+
+
+    <!-- MAIN -->
+
+    <main class="main">
+
+
+        <!-- TOP BAR -->
+
+        <header class="topbar">
+
+            <div>
+
+                <h1>AI Assistant</h1>
+
+                <p>
+                    Your personal campus assistant.
+                </p>
+
+            </div>
+
+
+            <div class="top-actions">
+
+                <button class="notification">
+
+                    <i class="fa-regular fa-bell"></i>
+
+                    <span></span>
+
+                </button>
+
+
+                <a href="/profile" class="profile-mini">
+
+                    <div class="avatar">
+                        S
+                    </div>
+
+                    <div>
+
+                        <strong>Santu</strong>
+
+                        <small>Data Science</small>
+
+                    </div>
+
+                </a>
+
+            </div>
+
+        </header>
+
+
+
+        <!-- AI AREA -->
+
+        <section class="ai-container">
+
+
+            <!-- AI HEADER -->
+
+            <div class="ai-header">
+
+                <div class="ai-icon">
+
+                    <i class="fa-solid fa-robot"></i>
+
+                </div>
+
+                <div>
+
+                    <h2>CampusHub AI</h2>
+
+                    <div class="online">
+
+                        <span></span>
+
+                        Online
+
+                    </div>
+
+                </div>
+
+                <button class="new-chat">
+
+                    <i class="fa-solid fa-plus"></i>
+
+                    New Chat
+
+                </button>
+
+            </div>
+
+
+
+            <!-- CHAT AREA -->
+
+            <div class="chat-area">
+
+
+                <!-- WELCOME -->
+
+                <div class="welcome">
+
+                    <div class="welcome-icon">
+
+                        <i class="fa-solid fa-wand-magic-sparkles"></i>
+
+                    </div>
+
+                    <h2>How can I help you?</h2>
+
+                    <p>
+                        Ask me anything about your studies,
+                        campus life, coding or career.
+                    </p>
+
+                </div>
+
+
+
+                <!-- SUGGESTIONS -->
+
+                <div class="suggestions">
+
+                    <button>
+
+                        <i class="fa-solid fa-code"></i>
+
+                        <span>
+                            Help me with DSA
+                        </span>
+
+                    </button>
+
+
+                    <button>
+
+                        <i class="fa-solid fa-book-open"></i>
+
+                        <span>
+                            Explain a topic
+                        </span>
+
+                    </button>
+
+
+                    <button>
+
+                        <i class="fa-solid fa-briefcase"></i>
+
+                        <span>
+                            Career advice
+                        </span>
+
+                    </button>
+
+
+                    <button>
+
+                        <i class="fa-solid fa-calendar"></i>
+
+                        <span>
+                            Find campus events
+                        </span>
+
+                    </button>
+
+                </div>
+
+
+
+                <!-- EXAMPLE MESSAGE -->
+
+                <div class="message-row ai-message">
+
+                    <div class="message-avatar">
+
+                        <i class="fa-solid fa-robot"></i>
+
+                    </div>
+
+                    <div class="message">
+
+                        <p>
+                            Hi! I'm CampusHub AI 👋
+                            How can I help you today?
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- INPUT -->
+
+            <div class="input-area">
+
+                <div class="input-box">
+
+                    <textarea
+                        placeholder="Ask CampusHub AI anything..."
+                        rows="1"></textarea>
+
+                    <button class="attach">
+
+                        <i class="fa-solid fa-paperclip"></i>
+
+                    </button>
+
+                    <button class="send">
+
+                        <i class="fa-solid fa-arrow-up"></i>
+
+                    </button>
+
+                </div>
+
+                <p class="disclaimer">
+                    CampusHub AI can make mistakes. Check important information.
+                </p>
+
+            </div>
+
+
+        </section>
+
+    </main>
+
+</body>
+
+</html>

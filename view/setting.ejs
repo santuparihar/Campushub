@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Settings | CampusHub</title>
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link rel="stylesheet" href="/settings.css">
+</head>
+
+<body>
+
+    <main class="settings-page">
+
+        <div class="settings-container">
+
+            <!-- Header -->
+            <div class="settings-header">
+
+                <a href="/main" class="back-btn">
+                    <i class="fa-solid fa-arrow-left"></i>
+                </a>
+
+                <div>
+                    <h1>Settings</h1>
+                    <p>Manage your CampusHub account</p>
+                </div>
+
+            </div>
+
+
+            <!-- Account -->
+            <section class="settings-section">
+
+                <h2>Account</h2>
+
+                <a href="/main/profile" class="setting-item">
+
+                    <div class="setting-icon">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+
+                    <div class="setting-content">
+                        <strong>Profile</strong>
+                        <span>Manage your personal information</span>
+                    </div>
+
+                    <i class="fa-solid fa-chevron-right arrow"></i>
+
+                </a>
+
+
+                <a href="/main/profile/edit" class="setting-item">
+
+                    <div class="setting-icon">
+                        <i class="fa-solid fa-pen"></i>
+                    </div>
+
+                    <div class="setting-content">
+                        <strong>Edit Profile</strong>
+                        <span>Update your profile details</span>
+                    </div>
+
+                    <i class="fa-solid fa-chevron-right arrow"></i>
+
+                </a>
+
+            </section>
+
+
+            <!-- Preferences -->
+            <section class="settings-section">
+
+                <h2>Preferences</h2>
+
+                <div class="setting-item">
+
+                    <div class="setting-icon">
+                        <i class="fa-regular fa-bell"></i>
+                    </div>
+
+                    <div class="setting-content">
+                        <strong>Notifications</strong>
+                        <span>Receive campus updates and alerts</span>
+                    </div>
+
+                    <label class="switch">
+                        <input type="checkbox" checked>
+                        <span class="slider"></span>
+                    </label>
+
+                </div>
+
+
+                <div class="setting-item">
+
+                    <div class="setting-icon">
+                        <i class="fa-solid fa-moon"></i>
+                    </div>
+
+                    <div class="setting-content">
+                        <strong>Dark Mode</strong>
+                        <span>Change the appearance of CampusHub</span>
+                    </div>
+
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider"></span>
+                    </label>
+
+                </div>
+
+            </section>
+
+
+            <!-- Security -->
+            <section class="settings-section">
+
+                <h2>Security</h2>
+
+                <a href="#" class="setting-item">
+
+                    <div class="setting-icon">
+                        <i class="fa-solid fa-lock"></i>
+                    </div>
+
+                    <div class="setting-content">
+                        <strong>Change Password</strong>
+                        <span>Update your account password</span>
+                    </div>
+
+                    <i class="fa-solid fa-chevron-right arrow"></i>
+
+                </a>
+
+            </section>
+
+
+            <!-- Logout -->
+            <a href="/logout" class="logout-btn">
+
+                <i class="fa-solid fa-right-from-bracket"></i>
+
+                Logout
+
+            </a>
+
+
+            <p class="version">
+                CampusHub · Version 1.0
+            </p>
+
+        </div>
+
+    </main>
+
+</body>
+</html>

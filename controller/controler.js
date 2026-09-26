@@ -36,6 +36,7 @@ async function handelsignup(req , res){
 
 async function handellogin(req ,res){
   
+
    const email = req.body.email;
    const password = req.body.password;
 
@@ -62,7 +63,7 @@ async function handellogin(req ,res){
         
         res.cookie("uid" , token , {
             httpOnly : true,
-            maxAge : 2 * 60 * 1000,
+            maxAge : 2 * 24 * 60 * 60 * 1000,
         });
        return res.redirect("/main");
     }
@@ -79,6 +80,38 @@ async function showmain(req , res){
     });
 }
 
+async function showprofile(req , res){
+    res.render("profile");
+}
+
+async function showevents(req ,res){
+    res.render("event");
+}
+
+async function showedit(req , res){
+    res.render("edit");
+}
+
+async function showcomm(req , res){
+    res.render("community");
+}
+
+async function showai(req ,res){
+    res.render("ai");
+}
+
+async function showanounc(req ,res){
+    res.render("announcement");
+}
+
+async function showcollege(req,res){
+    res.render("college");
+}
+
+async function showsetting(req ,res){
+    res.render("setting");
+}
+
 module.exports = {
     handelserve,
     showsignup,
@@ -86,4 +119,12 @@ module.exports = {
     handellogin,
     handelsignup,
     showmain,
+    showprofile,
+    showevents,
+    showedit,
+    showcomm,
+    showai,
+    showanounc,
+    showcollege,
+    showsetting,
 };

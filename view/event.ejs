@@ -1,0 +1,405 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CampusHub - Events</title>
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link rel="stylesheet" href="/event.css">
+</head>
+
+<body>
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+
+        <div class="logo">
+            <div class="logo-icon">
+                <i class="fa-solid fa-graduation-cap"></i>
+            </div>
+            <span>Campus<span>Hub</span></span>
+        </div>
+
+        <nav class="nav">
+
+            <a href="/main">
+                <i class="fa-solid fa-house"></i>
+                <span>Dashboard</span>
+            </a>
+
+            <a href="/main/profile">
+                <i class="fa-solid fa-user"></i>
+                <span>Profile</span>
+            </a>
+
+            <a href="/events" class="active">
+                <i class="fa-solid fa-calendar-days"></i>
+                <span>Events</span>
+            </a>
+
+            <a href="#">
+                <i class="fa-solid fa-robot"></i>
+                <span>AI Assistant</span>
+            </a>
+
+            <a href="#">
+                <i class="fa-solid fa-users"></i>
+                <span>Community</span>
+            </a>
+
+            <a href="#">
+                <i class="fa-solid fa-book"></i>
+                <span>Resources</span>
+            </a>
+
+        </nav>
+
+        <div class="sidebar-bottom">
+
+            <a href="#">
+                <i class="fa-solid fa-gear"></i>
+                <span>Settings</span>
+            </a>
+
+            <a href="/logout" class="logout">
+                <i class="fa-solid fa-right-from-bracket"></i>
+                <span>Logout</span>
+            </a>
+
+        </div>
+
+    </aside>
+
+
+    <!-- MAIN CONTENT -->
+    <main class="main">
+
+        <!-- TOP BAR -->
+        <header class="topbar">
+
+            <div>
+                <h1>Campus Events</h1>
+                <p>Discover what's happening around your campus.</p>
+            </div>
+
+            <div class="top-actions">
+
+                <button class="notification">
+                    <i class="fa-regular fa-bell"></i>
+                    <span></span>
+                </button>
+
+                <a href="/profile" class="profile-mini">
+                    <div class="avatar">
+                        S
+                    </div>
+
+                    <div>
+                        <strong>Santu</strong>
+                        <small>Data Science</small>
+                    </div>
+                </a>
+
+            </div>
+
+        </header>
+
+
+        <!-- SEARCH / FILTER -->
+        <section class="event-tools">
+
+            <div class="search-box">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" placeholder="Search events...">
+            </div>
+
+            <select>
+                <option>All Events</option>
+                <option>Technical</option>
+                <option>Cultural</option>
+                <option>Sports</option>
+                <option>Workshop</option>
+                <option>Competition</option>
+            </select>
+
+            <button class="create-event">
+                <i class="fa-solid fa-plus"></i>
+                Create Event
+            </button>
+
+        </section>
+
+
+        <!-- FEATURED EVENT -->
+        <section class="featured">
+
+            <div class="featured-content">
+
+                <span class="featured-label">
+                    <i class="fa-solid fa-star"></i>
+                    Featured Event
+                </span>
+
+                <h2>Campus Tech Fest 2026</h2>
+
+                <p>
+                    Join students, developers and innovators for a day
+                    filled with coding, technology, workshops and competitions.
+                </p>
+
+                <div class="featured-info">
+
+                    <span>
+                        <i class="fa-regular fa-calendar"></i>
+                        October 12, 2026
+                    </span>
+
+                    <span>
+                        <i class="fa-solid fa-location-dot"></i>
+                        Main Auditorium
+                    </span>
+
+                </div>
+
+                <button class="register-btn">
+                    Register Now
+                    <i class="fa-solid fa-arrow-right"></i>
+                </button>
+
+            </div>
+
+            <div class="featured-icon">
+                <i class="fa-solid fa-code"></i>
+            </div>
+
+        </section>
+
+
+        <!-- UPCOMING EVENTS -->
+        <section class="events-section">
+
+            <div class="section-heading">
+                <div>
+                    <h2>Upcoming Events</h2>
+                    <p>Don't miss what's happening on campus.</p>
+                </div>
+
+                <a href="#">View All <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+
+
+            <div class="events-grid">
+
+                <!-- EVENT 1 -->
+                <div class="event-card">
+
+                    <div class="event-image technical">
+                        <i class="fa-solid fa-laptop-code"></i>
+
+                        <span>Technical</span>
+                    </div>
+
+                    <div class="event-body">
+
+                        <div class="date">
+                            <strong>05</strong>
+                            <span>OCT</span>
+                        </div>
+
+                        <div class="event-details">
+
+                            <h3>Hackathon 2026</h3>
+
+                            <p>
+                                Build innovative solutions and compete
+                                with talented developers.
+                            </p>
+
+                            <div class="event-meta">
+                                <span>
+                                    <i class="fa-regular fa-clock"></i>
+                                    10:00 AM
+                                </span>
+
+                                <span>
+                                    <i class="fa-solid fa-location-dot"></i>
+                                    Lab 101
+                                </span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <button class="card-register">
+                        Register
+                    </button>
+
+                </div>
+
+
+                <!-- EVENT 2 -->
+                <div class="event-card">
+
+                    <div class="event-image workshop">
+                        <i class="fa-solid fa-chalkboard-user"></i>
+
+                        <span>Workshop</span>
+                    </div>
+
+                    <div class="event-body">
+
+                        <div class="date">
+                            <strong>08</strong>
+                            <span>OCT</span>
+                        </div>
+
+                        <div class="event-details">
+
+                            <h3>AI & Machine Learning</h3>
+
+                            <p>
+                                Learn the fundamentals of modern AI
+                                and machine learning.
+                            </p>
+
+                            <div class="event-meta">
+
+                                <span>
+                                    <i class="fa-regular fa-clock"></i>
+                                    2:00 PM
+                                </span>
+
+                                <span>
+                                    <i class="fa-solid fa-location-dot"></i>
+                                    Seminar Hall
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <button class="card-register">
+                        Register
+                    </button>
+
+                </div>
+
+
+                <!-- EVENT 3 -->
+                <div class="event-card">
+
+                    <div class="event-image cultural">
+                        <i class="fa-solid fa-music"></i>
+
+                        <span>Cultural</span>
+                    </div>
+
+                    <div class="event-body">
+
+                        <div class="date">
+                            <strong>15</strong>
+                            <span>OCT</span>
+                        </div>
+
+                        <div class="event-details">
+
+                            <h3>Campus Cultural Night</h3>
+
+                            <p>
+                                Music, dance, performances and
+                                unforgettable campus moments.
+                            </p>
+
+                            <div class="event-meta">
+
+                                <span>
+                                    <i class="fa-regular fa-clock"></i>
+                                    6:00 PM
+                                </span>
+
+                                <span>
+                                    <i class="fa-solid fa-location-dot"></i>
+                                    Open Ground
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <button class="card-register">
+                        Register
+                    </button>
+
+                </div>
+
+
+                <!-- EVENT 4 -->
+                <div class="event-card">
+
+                    <div class="event-image sports">
+                        <i class="fa-solid fa-futbol"></i>
+
+                        <span>Sports</span>
+                    </div>
+
+                    <div class="event-body">
+
+                        <div class="date">
+                            <strong>19</strong>
+                            <span>OCT</span>
+                        </div>
+
+                        <div class="event-details">
+
+                            <h3>Inter College Football</h3>
+
+                            <p>
+                                Represent your college and compete
+                                against other teams.
+                            </p>
+
+                            <div class="event-meta">
+
+                                <span>
+                                    <i class="fa-regular fa-clock"></i>
+                                    4:00 PM
+                                </span>
+
+                                <span>
+                                    <i class="fa-solid fa-location-dot"></i>
+                                    Sports Ground
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <button class="card-register">
+                        Register
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</body>
+
+</html>
+```

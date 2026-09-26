@@ -7,7 +7,7 @@ function setUser(user){
          email : user.email,
      },
     secret,{
-      expiresIn : "2m"
+      expiresIn : "2d"
     }
    );
 }

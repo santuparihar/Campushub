@@ -1,0 +1,555 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CampusHub - Community</title>
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link rel="stylesheet" href="/community.css">
+</head>
+
+<body>
+
+    <!-- SIDEBAR -->
+
+    <aside class="sidebar">
+
+        <div class="logo">
+            <div class="logo-icon">
+                <i class="fa-solid fa-graduation-cap"></i>
+            </div>
+
+            <span>Campus<span>Hub</span></span>
+        </div>
+
+
+        <nav class="nav">
+
+            <a href="/main">
+                <i class="fa-solid fa-house"></i>
+                <span>Dashboard</span>
+            </a>
+
+            <a href="/profile">
+                <i class="fa-solid fa-user"></i>
+                <span>Profile</span>
+            </a>
+
+            <a href="/events">
+                <i class="fa-solid fa-calendar-days"></i>
+                <span>Events</span>
+            </a>
+
+            <a href="#">
+                <i class="fa-solid fa-robot"></i>
+                <span>AI Assistant</span>
+            </a>
+
+            <a href="/community" class="active">
+                <i class="fa-solid fa-users"></i>
+                <span>Community</span>
+            </a>
+
+            <a href="#">
+                <i class="fa-solid fa-book"></i>
+                <span>Resources</span>
+            </a>
+
+        </nav>
+
+
+        <div class="sidebar-bottom">
+
+            <a href="#">
+                <i class="fa-solid fa-gear"></i>
+                <span>Settings</span>
+            </a>
+
+            <a href="/logout" class="logout">
+                <i class="fa-solid fa-right-from-bracket"></i>
+                <span>Logout</span>
+            </a>
+
+        </div>
+
+    </aside>
+
+
+    <!-- MAIN -->
+
+    <main class="main">
+
+
+        <!-- TOPBAR -->
+
+        <header class="topbar">
+
+            <div>
+                <h1>Community</h1>
+
+                <p>
+                    Connect, discuss and share with your campus.
+                </p>
+            </div>
+
+
+            <div class="top-actions">
+
+                <button class="notification">
+                    <i class="fa-regular fa-bell"></i>
+                    <span></span>
+                </button>
+
+
+                <a href="/profile" class="profile-mini">
+
+                    <div class="avatar">
+                        S
+                    </div>
+
+                    <div>
+                        <strong>Santu</strong>
+                        <small>Data Science</small>
+                    </div>
+
+                </a>
+
+            </div>
+
+        </header>
+
+
+
+        <!-- COMMUNITY TOOLS -->
+
+        <section class="community-tools">
+
+            <div class="search-box">
+
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+                <input
+                    type="text"
+                    placeholder="Search discussions...">
+
+            </div>
+
+
+            <button class="create-post">
+
+                <i class="fa-solid fa-plus"></i>
+
+                Create Post
+
+            </button>
+
+        </section>
+
+
+
+        <!-- CATEGORY -->
+
+        <div class="categories">
+
+            <button class="category active">
+                All
+            </button>
+
+            <button class="category">
+                General
+            </button>
+
+            <button class="category">
+                Academics
+            </button>
+
+            <button class="category">
+                Coding
+            </button>
+
+            <button class="category">
+                Placements
+            </button>
+
+            <button class="category">
+                Clubs
+            </button>
+
+        </div>
+
+
+
+        <!-- CONTENT -->
+
+        <div class="community-layout">
+
+
+            <!-- POSTS -->
+
+            <section class="posts">
+
+
+                <!-- POST 1 -->
+
+                <article class="post-card">
+
+                    <div class="post-header">
+
+                        <div class="user-info">
+
+                            <div class="user-avatar blue">
+                                A
+                            </div>
+
+                            <div>
+                                <h3>Arjun Sharma</h3>
+
+                                <p>
+                                    B.Tech CSE • 2 hours ago
+                                </p>
+                            </div>
+
+                        </div>
+
+                        <button class="more">
+                            <i class="fa-solid fa-ellipsis"></i>
+                        </button>
+
+                    </div>
+
+
+                    <div class="post-content">
+
+                        <span class="post-tag coding">
+                            Coding
+                        </span>
+
+                        <h2>
+                            What is the best way to start DSA?
+                        </h2>
+
+                        <p>
+                            I am starting DSA from scratch and want to
+                            prepare for coding interviews. Should I follow
+                            a sheet or solve problems topic by topic?
+                        </p>
+
+                    </div>
+
+
+                    <div class="post-actions">
+
+                        <button>
+                            <i class="fa-regular fa-heart"></i>
+                            24
+                        </button>
+
+                        <button>
+                            <i class="fa-regular fa-comment"></i>
+                            8 Comments
+                        </button>
+
+                        <button>
+                            <i class="fa-solid fa-share"></i>
+                            Share
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- POST 2 -->
+
+                <article class="post-card">
+
+                    <div class="post-header">
+
+                        <div class="user-info">
+
+                            <div class="user-avatar purple">
+                                R
+                            </div>
+
+                            <div>
+                                <h3>Riya Patel</h3>
+
+                                <p>
+                                    B.Tech IT • 5 hours ago
+                                </p>
+                            </div>
+
+                        </div>
+
+                        <button class="more">
+                            <i class="fa-solid fa-ellipsis"></i>
+                        </button>
+
+                    </div>
+
+
+                    <div class="post-content">
+
+                        <span class="post-tag academics">
+                            Academics
+                        </span>
+
+                        <h2>
+                            Notes for Data Structures mid-sem?
+                        </h2>
+
+                        <p>
+                            Does anyone have good notes for linked lists,
+                            stacks and queues? Our mid-sem is next week.
+                        </p>
+
+                    </div>
+
+
+                    <div class="post-actions">
+
+                        <button>
+                            <i class="fa-regular fa-heart"></i>
+                            17
+                        </button>
+
+                        <button>
+                            <i class="fa-regular fa-comment"></i>
+                            12 Comments
+                        </button>
+
+                        <button>
+                            <i class="fa-solid fa-share"></i>
+                            Share
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- POST 3 -->
+
+                <article class="post-card">
+
+                    <div class="post-header">
+
+                        <div class="user-info">
+
+                            <div class="user-avatar green">
+                                V
+                            </div>
+
+                            <div>
+                                <h3>Vikram Singh</h3>
+
+                                <p>
+                                    B.Tech DS • Yesterday
+                                </p>
+                            </div>
+
+                        </div>
+
+                        <button class="more">
+                            <i class="fa-solid fa-ellipsis"></i>
+                        </button>
+
+                    </div>
+
+
+                    <div class="post-content">
+
+                        <span class="post-tag placement">
+                            Placements
+                        </span>
+
+                        <h2>
+                            Anyone preparing for internships?
+                        </h2>
+
+                        <p>
+                            Looking for students who are preparing for
+                            internships this year. We could form a small
+                            study group and practice together.
+                        </p>
+
+                    </div>
+
+
+                    <div class="post-actions">
+
+                        <button>
+                            <i class="fa-regular fa-heart"></i>
+                            31
+                        </button>
+
+                        <button>
+                            <i class="fa-regular fa-comment"></i>
+                            15 Comments
+                        </button>
+
+                        <button>
+                            <i class="fa-solid fa-share"></i>
+                            Share
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+            </section>
+
+
+
+            <!-- RIGHT SIDEBAR -->
+
+            <aside class="right-sidebar">
+
+
+                <!-- TRENDING -->
+
+                <div class="side-card">
+
+                    <div class="side-title">
+
+                        <h2>
+                            <i class="fa-solid fa-fire"></i>
+                            Trending
+                        </h2>
+
+                    </div>
+
+
+                    <div class="trend">
+
+                        <span>#Placement2026</span>
+
+                        <small>128 posts</small>
+
+                    </div>
+
+
+                    <div class="trend">
+
+                        <span>#Hackathon</span>
+
+                        <small>96 posts</small>
+
+                    </div>
+
+
+                    <div class="trend">
+
+                        <span>#DSA</span>
+
+                        <small>84 posts</small>
+
+                    </div>
+
+
+                    <div class="trend">
+
+                        <span>#CollegeLife</span>
+
+                        <small>62 posts</small>
+
+                    </div>
+
+
+                </div>
+
+
+
+                <!-- ACTIVE MEMBERS -->
+
+                <div class="side-card">
+
+                    <div class="side-title">
+
+                        <h2>
+                            Active Members
+                        </h2>
+
+                    </div>
+
+
+                    <div class="member">
+
+                        <div class="member-avatar blue">
+                            A
+                        </div>
+
+                        <div>
+                            <strong>Arjun Sharma</strong>
+                            <small>124 contributions</small>
+                        </div>
+
+                    </div>
+
+
+                    <div class="member">
+
+                        <div class="member-avatar purple">
+                            R
+                        </div>
+
+                        <div>
+                            <strong>Riya Patel</strong>
+                            <small>98 contributions</small>
+                        </div>
+
+                    </div>
+
+
+                    <div class="member">
+
+                        <div class="member-avatar green">
+                            V
+                        </div>
+
+                        <div>
+                            <strong>Vikram Singh</strong>
+                            <small>86 contributions</small>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- COMMUNITY INFO -->
+
+                <div class="community-info">
+
+                    <i class="fa-solid fa-users"></i>
+
+                    <h3>CampusHub Community</h3>
+
+                    <p>
+                        A place for students to ask questions,
+                        share knowledge and connect with others.
+                    </p>
+
+                </div>
+
+
+            </aside>
+
+        </div>
+
+    </main>
+
+</body>
+
+</html>
+```

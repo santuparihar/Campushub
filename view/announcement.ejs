@@ -1,0 +1,454 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Announcements | CampusHub</title>
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link rel="stylesheet" href="/announcement.css">
+</head>
+
+<body>
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+
+        <div class="logo">
+            <div class="logo-icon">
+                <i class="fa-solid fa-graduation-cap"></i>
+            </div>
+
+            <span>CampusHub</span>
+        </div>
+
+        <nav class="nav-menu">
+
+            <a href="/main" class="nav-item">
+                <i class="fa-solid fa-house"></i>
+                <span>Dashboard</span>
+            </a>
+
+            <a href="/profile" class="nav-item">
+                <i class="fa-solid fa-user"></i>
+                <span>Profile</span>
+            </a>
+
+            <a href="/events" class="nav-item">
+                <i class="fa-solid fa-calendar-days"></i>
+                <span>Events</span>
+            </a>
+
+            <a href="/community" class="nav-item">
+                <i class="fa-solid fa-users"></i>
+                <span>Community</span>
+            </a>
+
+            <a href="/announcement" class="nav-item active">
+                <i class="fa-solid fa-bullhorn"></i>
+                <span>Announcements</span>
+            </a>
+
+            <a href="/ai" class="nav-item">
+                <i class="fa-solid fa-robot"></i>
+                <span>AI Assistant</span>
+            </a>
+
+            <a href="/resources" class="nav-item">
+                <i class="fa-solid fa-book"></i>
+                <span>Resources</span>
+            </a>
+
+        </nav>
+
+        <div class="sidebar-bottom">
+
+            <a href="/settings" class="nav-item">
+                <i class="fa-solid fa-gear"></i>
+                <span>Settings</span>
+            </a>
+
+            <a href="/logout" class="nav-item logout">
+                <i class="fa-solid fa-right-from-bracket"></i>
+                <span>Logout</span>
+            </a>
+
+        </div>
+
+    </aside>
+
+
+    <!-- Main Content -->
+    <main class="main-content">
+
+        <!-- Topbar -->
+        <header class="topbar">
+
+            <div>
+                <h1>Announcements</h1>
+                <p>Stay updated with everything happening on campus.</p>
+            </div>
+
+            <div class="topbar-right">
+
+                <button class="notification-btn">
+                    <i class="fa-regular fa-bell"></i>
+                    <span class="notification-dot"></span>
+                </button>
+
+                <div class="user-profile">
+                    <div class="avatar">S</div>
+
+                    <div class="user-info">
+                        <strong>Santu Parihar</strong>
+                        <span>Data Science</span>
+                    </div>
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <!-- Announcement Controls -->
+        <section class="announcement-controls">
+
+            <div class="search-box">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input
+                    type="text"
+                    placeholder="Search announcements...">
+            </div>
+
+            <div class="filter-buttons">
+
+                <button class="filter-btn active">
+                    All
+                </button>
+
+                <button class="filter-btn">
+                    Important
+                </button>
+
+                <button class="filter-btn">
+                    Academics
+                </button>
+
+                <button class="filter-btn">
+                    Events
+                </button>
+
+                <button class="filter-btn">
+                    Placements
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- Important Announcement -->
+        <section class="featured-announcement">
+
+            <div class="featured-icon">
+                <i class="fa-solid fa-bullhorn"></i>
+            </div>
+
+            <div class="featured-content">
+
+                <div class="announcement-top">
+
+                    <span class="priority important">
+                        <i class="fa-solid fa-circle-exclamation"></i>
+                        Important
+                    </span>
+
+                    <span class="date">
+                        26 Sep 2026
+                    </span>
+
+                </div>
+
+                <h2>Semester Examination Schedule Released</h2>
+
+                <p>
+                    The examination schedule for the current semester has been
+                    released. Students are advised to check the timetable and
+                    prepare accordingly.
+                </p>
+
+                <button class="read-more">
+                    Read announcement
+                    <i class="fa-solid fa-arrow-right"></i>
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- Announcement Grid -->
+        <section class="announcement-section">
+
+            <div class="section-heading">
+
+                <div>
+                    <h2>Latest Announcements</h2>
+                    <p>Recent updates from your campus</p>
+                </div>
+
+                <span class="announcement-count">
+                    8 announcements
+                </span>
+
+            </div>
+
+
+            <div class="announcement-grid">
+
+
+                <!-- Card 1 -->
+                <article class="announcement-card">
+
+                    <div class="card-header">
+
+                        <div class="announcement-icon academic">
+                            <i class="fa-solid fa-book-open"></i>
+                        </div>
+
+                        <span class="priority academic-tag">
+                            Academics
+                        </span>
+
+                    </div>
+
+                    <h3>Internal Assessment Schedule</h3>
+
+                    <p>
+                        Internal assessment dates have been announced.
+                        Students should check their respective subject
+                        schedules.
+                    </p>
+
+                    <div class="card-footer">
+                        <span>
+                            <i class="fa-regular fa-clock"></i>
+                            2 hours ago
+                        </span>
+
+                        <button>
+                            View
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                    </div>
+
+                </article>
+
+
+                <!-- Card 2 -->
+                <article class="announcement-card">
+
+                    <div class="card-header">
+
+                        <div class="announcement-icon placement">
+                            <i class="fa-solid fa-briefcase"></i>
+                        </div>
+
+                        <span class="priority placement-tag">
+                            Placements
+                        </span>
+
+                    </div>
+
+                    <h3>Microsoft Career Session</h3>
+
+                    <p>
+                        A career and technology session will be conducted
+                        for students interested in software engineering.
+                    </p>
+
+                    <div class="card-footer">
+
+                        <span>
+                            <i class="fa-regular fa-clock"></i>
+                            5 hours ago
+                        </span>
+
+                        <button>
+                            View
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Card 3 -->
+                <article class="announcement-card">
+
+                    <div class="card-header">
+
+                        <div class="announcement-icon event">
+                            <i class="fa-solid fa-calendar-check"></i>
+                        </div>
+
+                        <span class="priority event-tag">
+                            Events
+                        </span>
+
+                    </div>
+
+                    <h3>Campus Hackathon 2026</h3>
+
+                    <p>
+                        Registrations for the annual campus hackathon
+                        are now open. Build, collaborate and compete.
+                    </p>
+
+                    <div class="card-footer">
+
+                        <span>
+                            <i class="fa-regular fa-clock"></i>
+                            Yesterday
+                        </span>
+
+                        <button>
+                            View
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Card 4 -->
+                <article class="announcement-card">
+
+                    <div class="card-header">
+
+                        <div class="announcement-icon general">
+                            <i class="fa-solid fa-building-columns"></i>
+                        </div>
+
+                        <span class="priority general-tag">
+                            General
+                        </span>
+
+                    </div>
+
+                    <h3>Library Timing Updated</h3>
+
+                    <p>
+                        The central library will remain open until 10 PM
+                        during the examination preparation period.
+                    </p>
+
+                    <div class="card-footer">
+
+                        <span>
+                            <i class="fa-regular fa-clock"></i>
+                            1 day ago
+                        </span>
+
+                        <button>
+                            View
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Card 5 -->
+                <article class="announcement-card">
+
+                    <div class="card-header">
+
+                        <div class="announcement-icon academic">
+                            <i class="fa-solid fa-file-lines"></i>
+                        </div>
+
+                        <span class="priority academic-tag">
+                            Academics
+                        </span>
+
+                    </div>
+
+                    <h3>Assignment Submission Notice</h3>
+
+                    <p>
+                        Students are requested to submit pending assignments
+                        before the upcoming deadline.
+                    </p>
+
+                    <div class="card-footer">
+
+                        <span>
+                            <i class="fa-regular fa-clock"></i>
+                            2 days ago
+                        </span>
+
+                        <button>
+                            View
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Card 6 -->
+                <article class="announcement-card">
+
+                    <div class="card-header">
+
+                        <div class="announcement-icon event">
+                            <i class="fa-solid fa-microphone"></i>
+                        </div>
+
+                        <span class="priority event-tag">
+                            Events
+                        </span>
+
+                    </div>
+
+                    <h3>Tech Talk: AI & Future</h3>
+
+                    <p>
+                        Join an interactive session discussing artificial
+                        intelligence and the future of technology.
+                    </p>
+
+                    <div class="card-footer">
+
+                        <span>
+                            <i class="fa-regular fa-clock"></i>
+                            3 days ago
+                        </span>
+
+                        <button>
+                            View
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</body>
+</html>
