@@ -1,4 +1,4 @@
-```html
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -41,22 +41,22 @@
                 <span>Profile</span>
             </a>
 
-            <a href="/events">
+            <a href="/main/events">
                 <i class="fa-solid fa-calendar-days"></i>
                 <span>Events</span>
             </a>
 
-            <a href="#">
+            <a href="/main/AI-helper">
                 <i class="fa-solid fa-robot"></i>
                 <span>AI Assistant</span>
             </a>
 
-            <a href="/community" class="active">
+            <a href="/main/community" class="active">
                 <i class="fa-solid fa-users"></i>
                 <span>Community</span>
             </a>
 
-            <a href="#">
+            <a href="/main/profile/resources">
                 <i class="fa-solid fa-book"></i>
                 <span>Resources</span>
             </a>
@@ -66,12 +66,12 @@
 
         <div class="sidebar-bottom">
 
-            <a href="#">
+            <a href="/main/settings">
                 <i class="fa-solid fa-gear"></i>
                 <span>Settings</span>
             </a>
 
-            <a href="/logout" class="logout">
+            <a href="/main/logout" class="logout">
                 <i class="fa-solid fa-right-from-bracket"></i>
                 <span>Logout</span>
             </a>
@@ -110,12 +110,12 @@
                 <a href="/profile" class="profile-mini">
 
                     <div class="avatar">
-                        S
+                        <img src="/uploads/<%= user.photo %>">
                     </div>
 
                     <div>
-                        <strong>Santu</strong>
-                        <small>Data Science</small>
+                        <strong><%= user.name %></strong>
+                        <small><%= user.course %></small>
                     </div>
 
                 </a>
@@ -552,4 +552,3 @@
 </body>
 
 </html>
-```

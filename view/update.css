@@ -1,0 +1,96 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f1f5f9;
+    font-family: Arial, sans-serif;
+}
+
+.photo-card {
+    width: 350px;
+    padding: 30px;
+    text-align: center;
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.photo-card h2 {
+    margin-bottom: 10px;
+    color: #1e293b;
+}
+
+.photo-card p {
+    margin-bottom: 25px;
+    color: #64748b;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+#preview {
+    display: block;
+    width: 110px;
+    height: 110px;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #dbeafe;
+}
+
+#photo {
+    display: none;
+}
+
+.upload-label {
+    display: block;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px dashed #2563eb;
+    border-radius: 8px;
+    color: #2563eb;
+    cursor: pointer;
+}
+
+.pp{
+    display: flex;
+    margin-left : 120px;
+    margin-bottom : 10px;
+    height : 60px;
+    width : 60px;
+    border : 1px solid white;
+    overflow : hidden;
+    border-radius: 50%;
+}
+
+.pp img{
+    height : 100%;
+    width : 100%;
+    object-fit: cover;
+}
+
+.upload-label:hover {
+    background: #eff6ff;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background: #2563eb;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #1d4ed8;
+}

@@ -1,30 +1,33 @@
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
-    background-color: #050b14;
-    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
     min-height: 100vh;
     display: flex;
-    overflow-x: hidden;
+    background: #f8fafc;
+    color: #1e293b;
 }
 
-/* Left Panel - Branding & Welcome */
+/* =========================
+   LEFT PANEL
+========================= */
+
 .left-panel {
-    flex: 1;
-    background:
-        radial-gradient(circle at 20% 50%, #07345c 0%, transparent 35%),
-        #020b18;
-    padding: 50px;
+    width: 45%;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+    color: white;
+
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    position: relative;
-    border-right: 1px solid rgba(255, 255, 255, 0.05);
+
+    padding: 45px 55px;
 }
 
 .brand {
@@ -34,284 +37,402 @@ body {
 }
 
 .brand-logo {
-    width: 32px;
-    height: 32px;
-    background: linear-gradient(135deg, #00bfff, #0044ff);
-    border-radius: 8px;
+    width: 45px;
+    height: 45px;
+
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 0 15px rgba(0, 191, 255, 0.4);
+
+    background: #2563eb;
+    border-radius: 12px;
 }
 
 .brand-logo svg {
-    width: 18px;
-    height: 18px;
-    fill: #fff;
+    width: 28px;
+    height: 28px;
+    fill: white;
 }
 
 .brand-name {
-    font-size: 1.2rem;
+    font-size: 22px;
     font-weight: 700;
-    letter-spacing: 1px;
-    color: #ffffff;
+    letter-spacing: 2px;
 }
 
 .left-content {
-    max-width: 450px;
-    margin-bottom: 40px;
+    max-width: 500px;
+    margin: auto 0;
 }
 
 .left-content h1 {
-    font-size: 3.5rem;
-    font-weight: 700;
+    font-size: 52px;
     line-height: 1.1;
-    margin-bottom: 20px;
-    background: linear-gradient(to right, #ffffff, #8ab4f8);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    margin-bottom: 22px;
 }
 
 .left-content p {
-    color: #8b9bb4;
-    font-size: 1rem;
-    line-height: 1.5;
-    margin-bottom: 30px;
+    font-size: 17px;
+    line-height: 1.7;
+    color: #cbd5e1;
 }
 
 .quote-box {
     display: flex;
     align-items: center;
-    gap: 12px;
+    gap: 15px;
+
+    margin-top: 35px;
 }
 
 .quote-line {
     width: 4px;
-    height: 24px;
-    background-color: #00bfff;
-    border-radius: 2px;
+    height: 45px;
+    background: #3b82f6;
+    border-radius: 5px;
 }
 
 .quote-text {
-    color: #7b93af;
+    font-size: 16px;
     font-style: italic;
-    font-size: 0.9rem;
+    color: #e2e8f0;
 }
 
-/* Right Panel - Sign Up Form */
+
+/* =========================
+   RIGHT PANEL
+========================= */
+
 .right-panel {
-    flex: 1;
-    background-color: #040911;
+    width: 55%;
+    min-height: 100vh;
+
     display: flex;
-    align-items: center;
     justify-content: center;
-    padding: 40px;
-    overflow-y: auto;
+    align-items: center;
+
+    padding: 40px 30px;
 }
 
 .form-container {
     width: 100%;
-    max-width: 400px;
-    margin: auto 0;
+    max-width: 500px;
 }
 
+
+/* =========================
+   FORM HEADER
+========================= */
+
 .form-header {
-    margin-bottom: 25px;
+    margin-bottom: 30px;
 }
 
 .form-header h2 {
-    font-size: 2rem;
-    font-weight: 600;
+    font-size: 34px;
+    color: #0f172a;
     margin-bottom: 8px;
-    color: #ffffff;
 }
 
 .form-header p {
-    color: #7a8c9e;
-    font-size: 0.9rem;
+    color: #64748b;
+    font-size: 15px;
 }
 
+
+/* =========================
+   INPUT GROUP
+========================= */
+
 .input-group {
-    margin-bottom: 16px;
+    margin-bottom: 20px;
 }
 
 .input-group label {
     display: block;
-    font-size: 0.8rem;
-    color: #9aa8b8;
-    margin-bottom: 6px;
-    font-weight: 500;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    color: #334155;
+
+    margin-bottom: 8px;
 }
 
-.input-group input, 
+
+/* =========================
+   INPUT + SELECT
+========================= */
+
+.input-group input[type="text"],
+.input-group input[type="email"],
+.input-group input[type="password"],
 .input-group select {
     width: 100%;
-    background-color: #091322;
-    border: 1px solid #16263d;
+    height: 48px;
+
+    padding: 0 14px;
+
+    border: 1px solid #cbd5e1;
     border-radius: 8px;
-    padding: 12px 16px;
-    color: #ffffff;
-    font-size: 0.95rem;
+
+    background: white;
+
+    font-size: 15px;
+    color: #1e293b;
+
     outline: none;
-    transition: border-color 0.3s, box-shadow 0.3s;
-}
 
-.input-group select {
-    appearance: none;
-    background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.364%22%20height%3D%22292.364%22%3E%3Cpath%20fill%3D%22%237a8c9e%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E");
-    background-repeat: no-repeat;
-    background-position: right 16px center;
-    background-size: 10px;
-    cursor: pointer;
-}
-
-.input-group select option {
-    background-color: #091322;
-    color: #ffffff;
+    transition: 0.2s ease;
 }
 
 .input-group input::placeholder {
-    color: #43556d;
+    color: #94a3b8;
 }
 
-.input-group input:focus, 
+.input-group select {
+    cursor: pointer;
+}
+
+
+/* Focus */
+
+.input-group input:focus,
 .input-group select:focus {
-    border-color: #00bfff;
-    box-shadow: 0 0 0 3px rgba(2, 77, 102, 0.767);
+    border-color: #2563eb;
+
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12);
 }
 
-/* Radio Button Layout for Gender */
+
+/* =========================
+   GENDER
+========================= */
+
 .radio-group {
     display: flex;
-    gap: 20px;
-    background-color: #091322;
-    border: 1px solid #16263d;
-    border-radius: 8px;
-    padding: 12px 16px;
+    align-items: center;
+    gap: 22px;
 }
 
 .radio-label {
-    display: flex;
+    display: flex !important;
     align-items: center;
-    gap: 8px;
-    font-size: 0.9rem;
-    color: #c0cbd8;
+
+    gap: 7px;
+
+    font-size: 14px !important;
+    font-weight: 500 !important;
+
+    color: #475569 !important;
+
+    margin-bottom: 0 !important;
+
     cursor: pointer;
 }
 
-.radio-label input[type="radio"] {
-    accent-color: #00bfff;
+.radio-label input {
     width: 16px;
     height: 16px;
+
+    accent-color: #2563eb;
+
     cursor: pointer;
 }
+
+
+/* =========================
+   SUBMIT BUTTON
+========================= */
 
 .btn-submit {
     width: 100%;
-    background: linear-gradient(135deg, #00c6ff, #0072ff);
-    color: white;
+    height: 50px;
+
+    margin-top: 5px;
+
     border: none;
     border-radius: 8px;
-    padding: 14px;
-    font-size: 1rem;
+
+    background: #2563eb;
+    color: white;
+
+    font-size: 15px;
     font-weight: 600;
+
     cursor: pointer;
-    margin-top: 10px;
-    transition: opacity 0.3s, transform 0.1s;
-    box-shadow: 0 4px 15px rgba(0, 114, 255, 0.3);
+
+    transition: 0.2s ease;
 }
 
 .btn-submit:hover {
-    opacity: 0.9;
+    background: #1d4ed8;
+    transform: translateY(-1px);
 }
 
-.btn-submit:active {
-    transform: scale(0.98);
-}
+
+/* =========================
+   DIVIDER
+========================= */
 
 .divider {
     display: flex;
     align-items: center;
-    text-align: center;
-    margin: 20px 0;
-    color: #3b4d66;
-    font-size: 0.8rem;
-    text-transform: uppercase;
-    letter-spacing: 1px;
+    justify-content: center;
+
+    margin: 22px 0;
+
+    color: #94a3b8;
+
+    font-size: 13px;
 }
 
-.divider::before, .divider::after {
-    content: '';
+.divider::before,
+.divider::after {
+    content: "";
+
     flex: 1;
-    border-bottom: 1px solid #16263d;
+
+    height: 1px;
+
+    background: #e2e8f0;
 }
 
 .divider::before {
-    margin-right: .75em;
+    margin-right: 12px;
 }
 
 .divider::after {
-    margin-left: .75em;
+    margin-left: 12px;
 }
+
+
+/* =========================
+   GOOGLE BUTTON
+========================= */
 
 .btn-google {
     width: 100%;
-    background-color: #091322;
-    color: #ffffff;
-    border: 1px solid #16263d;
-    border-radius: 8px;
-    padding: 12px;
-    font-size: 0.9rem;
-    font-weight: 500;
-    cursor: pointer;
+    height: 48px;
+
     display: flex;
     align-items: center;
     justify-content: center;
+
     gap: 10px;
-    transition: background-color 0.3s, border-color 0.3s;
+
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+
+    background: white;
+    color: #334155;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.2s ease;
 }
 
 .btn-google:hover {
-    background-color: #0e1b2e;
-    border-color: #243856;
+    background: #f8fafc;
+    border-color: #94a3b8;
 }
 
 .btn-google svg {
-    width: 18px;
-    height: 18px;
+    width: 19px;
+    height: 19px;
 }
+
+
+/* =========================
+   FOOTER
+========================= */
 
 .footer-text {
     text-align: center;
+
     margin-top: 25px;
-    font-size: 0.85rem;
-    color: #7a8c9e;
+
+    font-size: 14px;
+    color: #64748b;
 }
 
 .footer-text a {
-    color: #00bfff;
-    text-decoration: none;
+    color: #2563eb;
+
     font-weight: 600;
+
+    text-decoration: none;
 }
 
 .footer-text a:hover {
     text-decoration: underline;
 }
 
-/* Responsive layout for mobile screens */
+
+/* =========================
+   RESPONSIVE
+========================= */
+
 @media (max-width: 900px) {
+
     body {
         flex-direction: column;
-        height: auto;
     }
+
     .left-panel {
-        padding: 30px;
-        min-height: 300px;
+        width: 100%;
+        min-height: auto;
+
+        padding: 35px 30px;
     }
+
+    .left-content {
+        margin: 60px 0 30px;
+    }
+
     .left-content h1 {
-        font-size: 2.5rem;
+        font-size: 40px;
     }
+
     .right-panel {
-        padding: 30px;
+        width: 100%;
+        min-height: auto;
+
+        padding: 40px 25px;
+    }
+}
+
+
+@media (max-width: 500px) {
+
+    .left-panel {
+        padding: 30px 22px;
+    }
+
+    .brand-name {
+        font-size: 19px;
+    }
+
+    .left-content h1 {
+        font-size: 34px;
+    }
+
+    .left-content p {
+        font-size: 15px;
+    }
+
+    .right-panel {
+        padding: 35px 20px;
+    }
+
+    .form-header h2 {
+        font-size: 29px;
+    }
+
+    .radio-group {
+        gap: 12px;
     }
 }

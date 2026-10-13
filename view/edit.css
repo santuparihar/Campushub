@@ -105,8 +105,6 @@ body {
 
     padding: 28px 0;
 
-    border-bottom: 1px solid #eeeeee;
-
     margin-bottom: 25px;
 }
 
@@ -117,21 +115,34 @@ body {
 
     border-radius: 50%;
 
-    background: linear-gradient(
-        135deg,
-        #6366f1,
-        #8b5cf6
-    );
-
-    color: white;
-
     display: flex;
     align-items: center;
     justify-content: center;
 
-    font-size: 28px;
-    font-weight: bold;
+    overflow: hidden;
 }
+
+.profile-photo img{
+    height: 100%;
+    width : 100%;
+    object-fit: cover;
+}
+
+.photo-info button{
+    margin-top: 10px;
+     background-color: white;
+
+}
+
+.photo-info a{
+    text-decoration: none;
+     border : 1px solid white;
+    margin-top: 30px;
+    padding: 10px;
+  border-radius: 20px;
+}
+
+
 
 
 .photo-info h3 {

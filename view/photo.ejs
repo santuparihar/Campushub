@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Profile Photo</title>
+    <link rel="stylesheet" href="/update.css">
+</head>
+<body>
+
+    <div class="photo-card">
+        <h2>Update Profile Photo</h2>
+        <p>Choose a new photo for your CampusHub profile.</p>
+
+        <form action="/main/profile/edit/Change-Profile-photo"
+              method="POST"
+              enctype="multipart/form-data">
+               
+              <div class="pp">
+                <img src="/uploads/<%= user.photo %>" >
+              </div>
+ 
+            <label for="photo" class="upload-label">
+                Choose Photo
+            </label>
+
+            <input
+                type="file"
+                id="photo"
+                name="profile-photo"
+                accept="image/*"
+                required
+            >
+            <button type="submit">Update Photo</button>
+        </form>
+    </div>
+
+    <script>
+        const photo = document.getElementById("photo");
+        const preview = document.getElementById("preview");
+
+        photo.addEventListener("change", function () {
+            if (this.files && this.files[0]) {
+                preview.src = URL.createObjectURL(this.files[0]);
+            }
+        });
+    </script>
+
+</body>
+</html>

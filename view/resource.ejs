@@ -1,0 +1,380 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CampusHub - Resources</title>
+
+    <link rel="stylesheet" href="/resuorce.css">
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+</head>
+
+<body>
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+
+        <div class="logo">
+            <i class="fa-solid fa-graduation-cap"></i>
+            <span>CampusHub</span>
+        </div>
+
+        <nav>
+
+            <a href="/main">
+                <i class="fa-solid fa-house"></i>
+                Dashboard
+            </a>
+
+            <a href="/main/profile">
+                <i class="fa-solid fa-user"></i>
+                Profile
+            </a>
+
+            <a href="/main/profile/courses">
+                <i class="fa-solid fa-book"></i>
+                Courses
+            </a>
+
+            <a href="/main/profile/resources" class="active">
+                <i class="fa-solid fa-folder-open"></i>
+                Resources
+            </a>
+
+            <a href="/main/events">
+                <i class="fa-solid fa-calendar-days"></i>
+                Events
+            </a>
+
+            <a href="/main/community">
+                <i class="fa-solid fa-users"></i>
+                Community
+            </a>
+
+            <a href="/main/announcement">
+                <i class="fa-solid fa-bullhorn"></i>
+                Announcements
+            </a>
+
+            <a href="/main/college-info">
+                <i class="fa-solid fa-building-columns"></i>
+                College Info
+            </a>
+
+            <a href="/main/AI-helper">
+                <i class="fa-solid fa-robot"></i>
+                AI Assistant
+            </a>
+
+            <a href="/main/settings">
+                <i class="fa-solid fa-gear"></i>
+                Settings
+            </a>
+
+        </nav>
+
+    </aside>
+
+
+    <!-- Main Content -->
+    <main class="main-content">
+
+        <!-- Header -->
+        <header class="topbar">
+
+            <div>
+                <h1>Resources</h1>
+                <p>Find notes, assignments, papers and useful study material.</p>
+            </div>
+
+            <div class="student-info">
+
+                <div class="avatar">
+                    <img src="/uploads/<%= user.photo %>">
+                </div>
+
+                <div>
+                    <strong><%= user.name %></strong>
+                    <span><%= user.course %></span>
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <!-- Search -->
+        <section class="search-section">
+
+            <div class="search-box">
+
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+                <input
+                    type="text"
+                    placeholder="Search resources..."
+                >
+
+            </div>
+
+            <select>
+                <option>All Subjects</option>
+                <option>Programming in C</option>
+                <option>Mathematics</option>
+                <option>Data Science</option>
+                <option>Web Technology</option>
+            </select>
+
+            <select>
+                <option>All Types</option>
+                <option>Notes</option>
+                <option>Assignments</option>
+                <option>Question Papers</option>
+                <option>Books</option>
+            </select>
+
+        </section>
+
+
+        <!-- Resource Categories -->
+        <section class="categories">
+
+            <div class="category-card">
+                <div class="category-icon blue">
+                    <i class="fa-solid fa-file-lines"></i>
+                </div>
+
+                <div>
+                    <h3>Notes</h3>
+                    <p>24 Resources</p>
+                </div>
+            </div>
+
+
+            <div class="category-card">
+                <div class="category-icon purple">
+                    <i class="fa-solid fa-list-check"></i>
+                </div>
+
+                <div>
+                    <h3>Assignments</h3>
+                    <p>12 Resources</p>
+                </div>
+            </div>
+
+
+            <div class="category-card">
+                <div class="category-icon orange">
+                    <i class="fa-solid fa-file-circle-question"></i>
+                </div>
+
+                <div>
+                    <h3>Question Papers</h3>
+                    <p>18 Resources</p>
+                </div>
+            </div>
+
+
+            <div class="category-card">
+                <div class="category-icon green">
+                    <i class="fa-solid fa-book"></i>
+                </div>
+
+                <div>
+                    <h3>Books</h3>
+                    <p>10 Resources</p>
+                </div>
+            </div>
+
+        </section>
+
+
+        <!-- Recent Resources -->
+        <section class="resources-section">
+
+            <div class="section-heading">
+
+                <div>
+                    <h2>Recent Resources</h2>
+                    <p>Recently added study material</p>
+                </div>
+
+                <button class="upload-btn">
+                    <i class="fa-solid fa-upload"></i>
+                    Upload Resource
+                </button>
+
+            </div>
+
+
+            <div class="resource-list">
+
+
+                <!-- Resource -->
+                <div class="resource-card">
+
+                    <div class="resource-icon pdf">
+                        <i class="fa-solid fa-file-pdf"></i>
+                    </div>
+
+                    <div class="resource-details">
+
+                        <h3>C Programming Complete Notes</h3>
+
+                        <p>
+                            Programming in C
+                            <span>•</span>
+                            2.4 MB
+                        </p>
+
+                    </div>
+
+                    <span class="resource-type">
+                        Notes
+                    </span>
+
+                    <button class="download-btn">
+                        <i class="fa-solid fa-download"></i>
+                        Download
+                    </button>
+
+                </div>
+
+
+                <!-- Resource -->
+                <div class="resource-card">
+
+                    <div class="resource-icon pdf">
+                        <i class="fa-solid fa-file-pdf"></i>
+                    </div>
+
+                    <div class="resource-details">
+
+                        <h3>Engineering Mathematics Unit 1</h3>
+
+                        <p>
+                            Engineering Mathematics
+                            <span>•</span>
+                            3.1 MB
+                        </p>
+
+                    </div>
+
+                    <span class="resource-type">
+                        Notes
+                    </span>
+
+                    <button class="download-btn">
+                        <i class="fa-solid fa-download"></i>
+                        Download
+                    </button>
+
+                </div>
+
+
+                <!-- Resource -->
+                <div class="resource-card">
+
+                    <div class="resource-icon doc">
+                        <i class="fa-solid fa-file-word"></i>
+                    </div>
+
+                    <div class="resource-details">
+
+                        <h3>Data Science Assignment 01</h3>
+
+                        <p>
+                            Data Science Fundamentals
+                            <span>•</span>
+                            850 KB
+                        </p>
+
+                    </div>
+
+                    <span class="resource-type assignment">
+                        Assignment
+                    </span>
+
+                    <button class="download-btn">
+                        <i class="fa-solid fa-download"></i>
+                        Download
+                    </button>
+
+                </div>
+
+
+                <!-- Resource -->
+                <div class="resource-card">
+
+                    <div class="resource-icon paper">
+                        <i class="fa-solid fa-file-circle-question"></i>
+                    </div>
+
+                    <div class="resource-details">
+
+                        <h3>Semester 1 Previous Year Paper</h3>
+
+                        <p>
+                            Computer Fundamentals
+                            <span>•</span>
+                            1.8 MB
+                        </p>
+
+                    </div>
+
+                    <span class="resource-type paper-type">
+                        Paper
+                    </span>
+
+                    <button class="download-btn">
+                        <i class="fa-solid fa-download"></i>
+                        Download
+                    </button>
+
+                </div>
+
+
+                <!-- Resource -->
+                <div class="resource-card">
+
+                    <div class="resource-icon book">
+                        <i class="fa-solid fa-book"></i>
+                    </div>
+
+                    <div class="resource-details">
+
+                        <h3>Web Development Reference Book</h3>
+
+                        <p>
+                            Web Technology
+                            <span>•</span>
+                            5.6 MB
+                        </p>
+
+                    </div>
+
+                    <span class="resource-type book-type">
+                        Book
+                    </span>
+
+                    <button class="download-btn">
+                        <i class="fa-solid fa-download"></i>
+                        Download
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</body>
+</html>

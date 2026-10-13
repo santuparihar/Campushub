@@ -1,5 +1,6 @@
 const express = require('express');
 const path = require('path');
+const multer = require("multer")
 const ejs = require('ejs');
 const cookieparser = require('cookie-parser');
 const PORT = 3000;
@@ -10,13 +11,18 @@ const {restrictologin} = require('./middlewares/auth');
 
 const userRoute = require('./handelr');
 
+const upload = multer({dest : '/uploads'})
+
 connectMongoDb("mongodb://127.0.0.1:27017/campus")
 .then(()=> console.log("MongoDb connected"));
 
 const app = express();
 app.set("view engine" , "ejs");
 app.set("views" , path.resolve("./view"));
+
 app.use(express.static(path.resolve("./view")));
+app.use(express.static(path.resolve("./public")));
+app.use('/uploads' ,express.static(path.join(__dirname , 'uploads')));
 
 const route = express.Router();
 console.log("route start");

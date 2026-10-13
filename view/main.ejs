@@ -54,11 +54,11 @@
             <div class="user-menu">
 
                 <div class="avatar">
-                    SP
+                    <img src="/uploads/<%= user.photo %>">
                 </div>
 
                 <strong>
-                    Santu Parihar
+                    <%= user.name %>
                 </strong>
 
                 <i class="fa-solid fa-chevron-down"></i>
@@ -82,7 +82,7 @@
 
             <nav>
 
-                <a href="Dashboard" class="nav-item active">
+                <a href="/main" class="nav-item active">
                     <i class="fa-solid fa-house"></i>
                     <span>Dashboard</span>
                 </a>
@@ -176,10 +176,9 @@
                                 Welcome back,
                             </p>
 
-
-                            <h1>
-                                Santu Parihar 👋
-                            </h1>
+          <h1>
+             <%= user.name %> 👋
+          </h1>
 
 
                             <p class="hero-text">
@@ -199,13 +198,13 @@
 
                                 <span>
                                     <i class="fa-solid fa-graduation-cap"></i>
-                                    Data Science
+                                     <%= user.course %>
                                 </span>
 
 
                                 <span>
                                     <i class="fa-regular fa-calendar"></i>
-                                    1st Sem
+                                     <%= user.year %>
                                 </span>
 
                             </div>
@@ -232,7 +231,7 @@
                     <section class="feature-grid">
 
 
-                        <a href="#" class="feature-card blue">
+                        <a href="/main/events" class="feature-card blue">
 
                             <div class="feature-icon">
                                 <i class="fa-regular fa-calendar-days"></i>
@@ -256,7 +255,7 @@
 
 
 
-                        <a href="#" class="feature-card green">
+                        <a href="/main/community" class="feature-card green">
 
                             <div class="feature-icon">
                                 <i class="fa-solid fa-user-group"></i>
@@ -280,7 +279,7 @@
 
 
 
-                        <a href="#" class="feature-card purple">
+                        <a href="/main/AI-helper" class="feature-card purple">
 
                             <div class="feature-icon">
                                 <i class="fa-solid fa-robot"></i>
@@ -304,7 +303,7 @@
 
 
 
-                        <a href="#" class="feature-card orange">
+                        <a href="/main/announcement" class="feature-card orange">
 
                             <div class="feature-icon">
                                 <i class="fa-solid fa-bullhorn"></i>
@@ -346,7 +345,7 @@
                                     Latest Announcements
                                 </h2>
 
-                                <a href="#">
+                                <a href="/main/announcement">
                                     View All →
                                 </a>
 
@@ -485,35 +484,35 @@
                             </a>
 
 
-                            <a href="#">
+                            <a href="https://mis.itmuniversity.ac.in/itmzone/login.php">
                                 <i class="fa-solid fa-file-lines"></i>
                                 <span>Examination Portal</span>
                                 <b>›</b>
                             </a>
 
 
-                            <a href="#">
+                            <a href="https://www.onlineresultportal.com/university/itm-university-gwalior/">
                                 <i class="fa-solid fa-trophy"></i>
                                 <span>Result Portal</span>
                                 <b>›</b>
                             </a>
 
 
-                            <a href="#">
+                            <a href="https://www.itmuniversity.ac.in/academics/library">
                                 <i class="fa-solid fa-book-open"></i>
                                 <span>Library Resources</span>
                                 <b>›</b>
                             </a>
 
 
-                            <a href="#">
+                            <a href="https://www.itmuniversity.ac.in/academics/library">
                                 <i class="fa-solid fa-briefcase"></i>
                                 <span>Placement Cell</span>
                                 <b>›</b>
                             </a>
 
 
-                            <a href="#">
+                            <a href="https://www.collegebatch.com/685-itm-university-hostel-fees-facilities-gwalior">
                                 <i class="fa-solid fa-house"></i>
                                 <span>Hostel Information</span>
                                 <b>›</b>
@@ -559,13 +558,13 @@
                         <div class="profile-head">
 
                             <div class="big-avatar">
-                                SP
+                                <img src="/uploads/<%= user.photo %>">
                             </div>
 
                             <div>
 
                                 <h2>
-                                    Santu Parihar
+                                    <%= user.name %>
                                 </h2>
 
                                 <p>
@@ -587,20 +586,20 @@
 
                             <p>
                                 <i class="fa-solid fa-graduation-cap"></i>
-                                Data Science
+                                 <%= user.course %>
                             </p>
 
 
                             <p>
                                 <i class="fa-regular fa-calendar"></i>
-                                1st Sem
+                                <%= user.year%>
                             </p>
 
                         </div>
 
 
-                        <button class="edit-btn">
-                           <a href="/main/profile"> Edit Profile </a> 
+                        <button class="edit-btn" href="/main/profile/edit">
+                           <a href="/main/profile/edit"> Edit Profile </a> 
                         </button>
 
                     </section>
@@ -618,7 +617,7 @@
                                 Upcoming Events
                             </h2>
 
-                            <a href="#">
+                            <a href="/main/events">
                                 View All →
                             </a>
 
@@ -755,7 +754,7 @@
                                 Your Community
                             </h2>
 
-                            <a href="#">
+                            <a href="/main/community">
                                 View All →
                             </a>
 

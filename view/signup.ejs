@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,102 +7,286 @@
     <title>CampusHub - Sign Up</title>
     <link rel="stylesheet" href="signup.css">
 </head>
+
 <body>
 
     <!-- Left Panel -->
     <div class="left-panel">
+
         <div class="brand">
             <div class="brand-logo">
-                <svg viewBox="0 0 24 24"><path d="M12 3L1 9l11 6 9-4.91V17h2V9L12 3zM5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82z"/></svg>
+                <svg viewBox="0 0 24 24">
+                    <path d="M12 3L1 9l11 6 9-4.91V17h2V9L12 3zM5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82z"/>
+                </svg>
             </div>
+
             <div class="brand-name">CAMPUSHUB</div>
         </div>
 
         <div class="left-content">
+
             <h1>Join Us Today!</h1>
-            <p>Your campus journey begins here. Connect, learn, explore and make the most out of your college life.</p>
+
+            <p>
+                Your campus journey begins here. Connect, learn, explore and
+                make the most out of your college life.
+            </p>
+
             <div class="quote-box">
                 <div class="quote-line"></div>
-                <div class="quote-text">"Your campus. Your people. Your journey."</div>
+
+                <div class="quote-text">
+                    "Your campus. Your people. Your journey."
+                </div>
             </div>
+
         </div>
 
-        <div></div> <!-- Empty div for flex spacing balance -->
+        <div></div>
+
     </div>
 
-    <!-- Right Panel (Sign Up Form) -->
+
+    <!-- Right Panel -->
     <div class="right-panel">
+
         <div class="form-container">
+
             <div class="form-header">
                 <h2>Sign Up</h2>
                 <p>Create your CampusHub account</p>
             </div>
 
+
+            <!-- IMPORTANT: Keep action="/signup" -->
             <form action="/signup" method="post">
+
+                <!-- Full Name -->
                 <div class="input-group">
-                    <label for="name">Full Name</label>
-                    <input type="text" id="fullname" placeholder="Enter your full name" name ="name" required>
+
+                    <label for="fullname">Full Name</label>
+
+                    <input
+                        type="text"
+                        id="fullname"
+                        placeholder="Enter your full name"
+                        name="name"
+                        required
+                    >
+
                 </div>
 
+
+                <!-- Email -->
                 <div class="input-group">
+
                     <label for="email">Email Address</label>
-                    <input type="email" id="email" placeholder="Enter your email" name = "email" required>
+
+                    <input
+                        type="email"
+                        id="email"
+                        placeholder="Enter your email"
+                        name="email"
+                        required
+                    >
+
                 </div>
 
+
+                <!-- Course -->
                 <div class="input-group">
+
                     <label for="course">Course / Degree</label>
-                    <select id="course" name = "course" required>
-                        <option value="" disabled selected>Select your degree</option>
-                        <option value="btech">B.Tech (Bachelor of Technology)</option>
-                        <option value="mtech">M.Tech (Master of Technology)</option>
-                        <option value="bca">BCA (Bachelor of Computer Applications)</option>
-                        <option value="mca">MCA (Master of Computer Applications)</option>
-                        <option value="bsc">B.Sc (Bachelor of Science)</option>
-                        <option value="bba">BBA (Bachelor of Business Administration)</option>
-                        <option value="mba">MBA (Master of Business Administration)</option>
-                        <option value="other">Other Degree</option>
+
+                    <select id="course" name="course" required>
+
+                        <option value="" disabled selected>
+                            Select your degree
+                        </option>
+
+                        <option value="btech">
+                            B.Tech (Bachelor of Technology)
+                        </option>
+
+                        <option value="mtech">
+                            M.Tech (Master of Technology)
+                        </option>
+
+                        <option value="bca">
+                            BCA (Bachelor of Computer Applications)
+                        </option>
+
+                        <option value="mca">
+                            MCA (Master of Computer Applications)
+                        </option>
+
+                        <option value="bsc">
+                            B.Sc (Bachelor of Science)
+                        </option>
+
+                        <option value="bba">
+                            BBA (Bachelor of Business Administration)
+                        </option>
+
+                        <option value="mba">
+                            MBA (Master of Business Administration)
+                        </option>
+
+                        <option value="other">
+                            Other Degree
+                        </option>
+
                     </select>
+
                 </div>
 
+
+                <!-- Year -->
                 <div class="input-group">
+
+                    <label for="year">Year</label>
+
+                    <select id="year" name="year" required>
+
+                        <option value="" disabled selected>
+                            Select your year
+                        </option>
+
+                        <option value="1st Year">1st Year</option>
+
+                        <option value="2nd Year">2nd Year</option>
+
+                        <option value="3rd Year">3rd Year</option>
+
+                        <option value="4th Year">4th Year</option>
+
+                    </select>
+
+                </div>
+
+
+                <!-- Gender -->
+                <div class="input-group">
+
                     <label>Gender</label>
+
                     <div class="radio-group">
+
                         <label class="radio-label">
-                            <input type="radio" name="gender" value="male" name = "gender" required> Male
+
+                            <input
+                                type="radio"
+                                name="gender"
+                                value="male"
+                                required
+                            >
+
+                            Male
+
                         </label>
+
+
                         <label class="radio-label">
-                            <input type="radio" name="gender" value="female" nmae="gender" required> Female
+
+                            <input
+                                type="radio"
+                                name="gender"
+                                value="female"
+                            >
+
+                            Female
+
                         </label>
+
+
                         <label class="radio-label">
-                            <input type="radio" name="gender" value="other" name="gender" required> Other
+
+                            <input
+                                type="radio"
+                                name="gender"
+                                value="other"
+                            >
+
+                            Other
+
                         </label>
+
                     </div>
+
                 </div>
 
+
+                <!-- Password -->
                 <div class="input-group">
+
                     <label for="password">Password</label>
-                    <input type="password" id="password" placeholder="Create a password" name ="password" required>
+
+                    <input
+                        type="password"
+                        id="password"
+                        placeholder="Create a password"
+                        name="password"
+                        required
+                    >
+
                 </div>
 
-                <button type="submit" class="btn-submit">Sign Up &rarr;</button>
 
-                <div class="divider">or</div>
-
-                <button type="button" class="btn-google">
-                    <svg viewBox="0 0 24 24">
-                        <path fill="#4285F4" d="M23.745 12.27c0-.7-.06-1.4-.19-2.07H12v4.51h6.6c-.29 1.52-1.14 2.82-2.4 3.68v3.05h3.88c2.27-2.09 3.66-5.17 3.66-9.17z"/>
-                        <path fill="#34A853" d="M12 24c3.24 0 5.95-1.08 7.93-2.91l-3.88-3.05c-1.08.72-2.45 1.16-4.05 1.16-3.13 0-5.78-2.11-6.73-4.96H1.18v3.15C3.17 21.32 7.23 24 12 24z"/>
-                        <path fill="#FBBC05" d="M5.27 14.24c-.25-.72-.38-1.49-.38-2.24s.13-1.52.38-2.24V6.6H1.18C4.3 2.94 7.82 1 12 1s7.7 1.94 10.82 5.6l-3.92 3.15c-.95-2.85-3.6-4.96-6.73-4.96-1.6 0-2.97.44-4.05 1.16L5.27 14.24z"/>
-                        <path fill="#EA4335" d="M12 4.75c1.77 0 3.35.61 4.6 1.8l3.42-3.42C17.95 1.19 15.24 0 12 0 7.23 0 3.17 2.68 1.18 6.6l4.09 3.15c.95-2.85 3.6-4.96 6.73-4.96z"/>
-                    </svg>
-                    Continue with Google
+                <!-- Submit -->
+                <button type="submit" class="btn-submit">
+                    Sign Up &rarr;
                 </button>
+
+
+                <div class="divider">
+                    or
+                </div>
+
+
+                <!-- Google -->
+                <button type="button" class="btn-google">
+
+                    <svg viewBox="0 0 24 24">
+
+                        <path
+                            fill="#4285F4"
+                            d="M23.745 12.27c0-.7-.06-1.4-.19-2.07H12v4.51h6.6c-.29 1.52-1.14 2.82-2.4 3.68v3.05h3.88c2.27-2.09 3.66-5.17 3.66-9.17z"
+                        />
+
+                        <path
+                            fill="#34A853"
+                            d="M12 24c3.24 0 5.95-1.08 7.93-2.91l-3.88-3.05c-1.08.72-2.45 1.16-4.05 1.16-3.13 0-5.78-2.11-6.73-4.96H1.18v3.15C3.17 21.32 7.23 24 12 24z"
+                        />
+
+                        <path
+                            fill="#FBBC05"
+                            d="M5.27 14.24c-.25-.72-.38-1.49-.38-2.24s.13-1.52.38-2.24V6.6H1.18C4.3 2.94 7.82 1 12 1s7.7 1.94 10.82 5.6l-3.92 3.15c-.95-2.85-3.6-4.96-6.73-4.96-1.6 0-2.97.44-4.05 1.16L5.27 14.24z"
+                        />
+
+                        <path
+                            fill="#EA4335"
+                            d="M12 4.75c1.77 0 3.35.61 4.6 1.8l3.42-3.42C17.95 1.19 15.24 0 12 0 7.23 0 3.17 2.68 1.18 6.6l4.09 3.15c.95-2.85 3.6-4.96 6.73-4.96z"
+                        />
+
+                    </svg>
+
+                    Continue with Google
+
+                </button>
+
             </form>
 
+
+            <!-- Login route kept unchanged -->
             <div class="footer-text">
-                Already have an account? <a href="login">Login</a>
+
+                Already have an account?
+                <a href="/login">Login</a>
+
             </div>
+
         </div>
+
     </div>
 
 </body>

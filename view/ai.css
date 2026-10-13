@@ -102,6 +102,21 @@ body {
     transition: 0.2s;
 }
 
+.avatar{
+      
+    height : 40px;
+    width : 40px;
+    border : 1px solid white;
+    overflow : hidden;
+    border-radius : 50%;
+}
+
+.avatar img{
+    height : 100%;
+    width : 100%;
+
+}
+
 
 .nav a:hover,
 .sidebar-bottom a:hover {
@@ -608,4 +623,13 @@ body {
     font-size: 14px;
 
     max-height: 120px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+}
+.send{
+    height:  4.2vh;
+    width : 2.3vw;
+    border-radius: 2px;
+    background-color: #3730a3;
 }

@@ -31,22 +31,22 @@
                 Profile
             </a>
 
-            <a href="/courses">
+            <a href="/main/profile/course">
                 <span>▣</span>
                 Courses
             </a>
 
-            <a href="/resources">
+            <a href="/main/profile/resources">
                 <span>◫</span>
                 Resources
             </a>
 
-            <a href="/community">
+            <a href="/main/community">
                 <span>♧</span>
                 Community
             </a>
 
-            <a href="/ai">
+            <a href="/main/AI-helper">
                 <span>✦</span>
                 AI Assistant
             </a>
@@ -55,12 +55,12 @@
 
         <div class="sidebar-bottom">
 
-            <a href="/settings">
+            <a href="/main/settings">
                 <span>⚙</span>
                 Settings
             </a>
 
-            <a href="/logout" class="logout">
+            <a href="/main/logout" class="logout">
                 <span>↪</span>
                 Logout
             </a>
@@ -97,11 +97,11 @@
 
                 <div class="mini-profile">
                     <div class="mini-avatar">
-                        S
+                        <img src="/uploads/<%= user.photo %>">
                     </div>
 
                     <div>
-                        <p>Santu Parihar</p>
+                        <p><%= user.name %></p>
                         <span>Student</span>
                     </div>
                 </div>
@@ -131,17 +131,19 @@
 
             <!-- Profile Header Card -->
             <div class="profile-header-card">
-
-                <div class="profile-avatar">
-                    S
+             
+                   <div class="profile-avatar">
+                     <img src="/uploads/<%= user.photo %>">
                 </div>
+             </form>
+            
 
                 <div class="profile-main-info">
 
-                    <h2>Santu Parihar</h2>
+                    <h2><%= user.name %></h2>
 
                     <p class="student-role">
-                        B.Tech Student
+                       Student
                     </p>
 
                     <p class="college">
@@ -151,11 +153,11 @@
                     <div class="profile-tags">
 
                         <span>
-                            Data Science
+                            <%= user.course %>
                         </span>
 
                         <span>
-                            1st Semester
+                             <%= user.year %>
                         </span>
 
                     </div>
@@ -196,7 +198,7 @@
                                 </span>
 
                                 <p>
-                                    Santu Parihar
+                                    <%= user.name %>
                                 </p>
                             </div>
 
@@ -211,7 +213,7 @@
                                 </span>
 
                                 <p>
-                                    santu@example.com
+                                    <%= user.email %>
                                 </p>
                             </div>
 
@@ -226,7 +228,7 @@
                                 </span>
 
                                 <p>
-                                    Male
+                                     <%= user.gender %>
                                 </p>
                             </div>
 
@@ -264,7 +266,7 @@
                                 </span>
 
                                 <p>
-                                    ITM University Gwalior
+                                    ITM University
                                 </p>
                             </div>
 
@@ -279,7 +281,7 @@
                                 </span>
 
                                 <p>
-                                    B.Tech - Data Science
+                                     <%= user.course %>
                                 </p>
                             </div>
 
@@ -294,7 +296,7 @@
                                 </span>
 
                                 <p>
-                                    1st Semester
+                                    <%= user.year %>
                                 </p>
                             </div>
 

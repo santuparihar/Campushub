@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CampusHub - Courses</title>
+
+    <link rel="stylesheet" href="/course.css">
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+</head>
+
+<body>
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+
+        <div class="logo">
+            <i class="fa-solid fa-graduation-cap"></i>
+            <span>CampusHub</span>
+        </div>
+
+        <nav>
+            <a href="/main">
+                <i class="fa-solid fa-house"></i>
+                Dashboard
+            </a>
+
+            <a href="/main/profile">
+                <i class="fa-solid fa-user"></i>
+                Profile
+            </a>
+
+            <a href="/main/courses" class="active">
+                <i class="fa-solid fa-book"></i>
+                Courses
+            </a>
+
+            <a href="/main/events">
+                <i class="fa-solid fa-calendar-days"></i>
+                Events
+            </a>
+
+            <a href="/main/community">
+                <i class="fa-solid fa-users"></i>
+                Community
+            </a>
+
+            <a href="/main/announcements">
+                <i class="fa-solid fa-bullhorn"></i>
+                Announcements
+            </a>
+
+            <a href="/main/college">
+                <i class="fa-solid fa-building-columns"></i>
+                College Info
+            </a>
+
+            <a href="/main/AI-helper">
+                <i class="fa-solid fa-robot"></i>
+                AI Assistant
+            </a>
+
+            <a href="/main/settings">
+                <i class="fa-solid fa-gear"></i>
+                Settings
+            </a>
+        </nav>
+
+    </aside>
+
+
+    <!-- Main Content -->
+    <main class="main-content">
+
+        <!-- Top Bar -->
+        <header class="topbar">
+
+            <div>
+                <h1>My Courses</h1>
+                <p>Manage your subjects and learning resources.</p>
+            </div>
+
+            <div class="student-info">
+                <div class="avatar">
+                    <img src="/uploads/<%= user.photo %>">
+                </div>
+
+                <div>
+                    <strong><%= user.name %></strong>
+                    <span><%= user.course %></span>
+                </div>
+            </div>
+
+        </header>
+
+
+        <!-- Course Overview -->
+        <section class="overview">
+
+            <div class="overview-card">
+                <div class="overview-icon">
+                    <i class="fa-solid fa-layer-group"></i>
+                </div>
+
+                <div>
+                    <span>Current Semester</span>
+                    <h2>Semester 1</h2>
+                </div>
+            </div>
+
+
+            <div class="overview-card">
+                <div class="overview-icon">
+                    <i class="fa-solid fa-book-open"></i>
+                </div>
+
+                <div>
+                    <span>Total Subjects</span>
+                    <h2>6</h2>
+                </div>
+            </div>
+
+
+            <div class="overview-card">
+                <div class="overview-icon">
+                    <i class="fa-solid fa-chart-line"></i>
+                </div>
+
+                <div>
+                    <span>Overall Progress</span>
+                    <h2>68%</h2>
+                </div>
+            </div>
+
+        </section>
+
+
+        <!-- Search -->
+        <section class="search-section">
+
+            <div class="search-box">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input
+                    type="text"
+                    placeholder="Search courses or subjects..."
+                >
+            </div>
+
+            <select>
+                <option>All Subjects</option>
+                <option>Programming</option>
+                <option>Mathematics</option>
+                <option>Computer Science</option>
+            </select>
+
+        </section>
+
+
+        <!-- Courses -->
+        <section class="courses-section">
+
+            <div class="section-heading">
+                <div>
+                    <h2>Your Courses</h2>
+                    <p>Subjects enrolled in this semester</p>
+                </div>
+            </div>
+
+
+            <div class="course-grid">
+
+
+                <!-- Course 1 -->
+                <div class="course-card">
+
+                    <div class="course-top">
+                        <div class="course-icon blue">
+                            <i class="fa-solid fa-code"></i>
+                        </div>
+
+                        <span class="semester">
+                            SEM 1
+                        </span>
+                    </div>
+
+                    <h3>Programming in C</h3>
+
+                    <p>
+                        Learn programming fundamentals, logic building,
+                        functions, arrays and basic data structures.
+                    </p>
+
+                    <div class="course-info">
+                        <span>
+                            <i class="fa-solid fa-clock"></i>
+                            4 Credits
+                        </span>
+
+                        <span>
+                            <i class="fa-solid fa-user"></i>
+                            Faculty
+                        </span>
+                    </div>
+
+                    <div class="progress-area">
+
+                        <div class="progress-text">
+                            <span>Progress</span>
+                            <strong>75%</strong>
+                        </div>
+
+                        <div class="progress-bar">
+                            <div style="width: 75%;"></div>
+                        </div>
+
+                    </div>
+
+                    <button>
+                        View Course
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+
+                </div>
+
+
+                <!-- Course 2 -->
+                <div class="course-card">
+
+                    <div class="course-top">
+                        <div class="course-icon purple">
+                            <i class="fa-solid fa-calculator"></i>
+                        </div>
+
+                        <span class="semester">
+                            SEM 1
+                        </span>
+                    </div>
+
+                    <h3>Engineering Mathematics</h3>
+
+                    <p>
+                        Explore calculus, matrices, differential equations
+                        and mathematical concepts used in engineering.
+                    </p>
+
+                    <div class="course-info">
+                        <span>
+                            <i class="fa-solid fa-clock"></i>
+                            4 Credits
+                        </span>
+
+                        <span>
+                            <i class="fa-solid fa-user"></i>
+                            Faculty
+                        </span>
+                    </div>
+
+                    <div class="progress-area">
+
+                        <div class="progress-text">
+                            <span>Progress</span>
+                            <strong>62%</strong>
+                        </div>
+
+                        <div class="progress-bar">
+                            <div style="width: 62%;"></div>
+                        </div>
+
+                    </div>
+
+                    <button>
+                        View Course
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+
+                </div>
+
+
+                <!-- Course 3 -->
+                <div class="course-card">
+
+                    <div class="course-top">
+                        <div class="course-icon green">
+                            <i class="fa-solid fa-database"></i>
+                        </div>
+
+                        <span class="semester">
+                            SEM 1
+                        </span>
+                    </div>
+
+                    <h3>Data Science Fundamentals</h3>
+
+                    <p>
+                        Introduction to data, databases, data analysis
+                        and the fundamentals of data science.
+                    </p>
+
+                    <div class="course-info">
+                        <span>
+                            <i class="fa-solid fa-clock"></i>
+                            3 Credits
+                        </span>
+
+                        <span>
+                            <i class="fa-solid fa-user"></i>
+                            Faculty
+                        </span>
+                    </div>
+
+                    <div class="progress-area">
+
+                        <div class="progress-text">
+                            <span>Progress</span>
+                            <strong>55%</strong>
+                        </div>
+
+                        <div class="progress-bar">
+                            <div style="width: 55%;"></div>
+                        </div>
+
+                    </div>
+
+                    <button>
+                        View Course
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+
+                </div>
+
+
+                <!-- Course 4 -->
+                <div class="course-card">
+
+                    <div class="course-top">
+                        <div class="course-icon orange">
+                            <i class="fa-solid fa-microchip"></i>
+                        </div>
+
+                        <span class="semester">
+                            SEM 1
+                        </span>
+                    </div>
+
+                    <h3>Computer Fundamentals</h3>
+
+                    <p>
+                        Understand computer architecture, operating systems,
+                        hardware and basic computing concepts.
+                    </p>
+
+                    <div class="course-info">
+                        <span>
+                            <i class="fa-solid fa-clock"></i>
+                            3 Credits
+                        </span>
+
+                        <span>
+                            <i class="fa-solid fa-user"></i>
+                            Faculty
+                        </span>
+                    </div>
+
+                    <div class="progress-area">
+
+                        <div class="progress-text">
+                            <span>Progress</span>
+                            <strong>70%</strong>
+                        </div>
+
+                        <div class="progress-bar">
+                            <div style="width: 70%;"></div>
+                        </div>
+
+                    </div>
+
+                    <button>
+                        View Course
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+
+                </div>
+
+
+                <!-- Course 5 -->
+                <div class="course-card">
+
+                    <div class="course-top">
+                        <div class="course-icon pink">
+                            <i class="fa-solid fa-globe"></i>
+                        </div>
+
+                        <span class="semester">
+                            SEM 1
+                        </span>
+                    </div>
+
+                    <h3>Web Technology</h3>
+
+                    <p>
+                        Learn HTML, CSS, JavaScript and the fundamentals
+                        of modern web development.
+                    </p>
+
+                    <div class="course-info">
+                        <span>
+                            <i class="fa-solid fa-clock"></i>
+                            3 Credits
+                        </span>
+
+                        <span>
+                            <i class="fa-solid fa-user"></i>
+                            Faculty
+                        </span>
+                    </div>
+
+                    <div class="progress-area">
+
+                        <div class="progress-text">
+                            <span>Progress</span>
+                            <strong>80%</strong>
+                        </div>
+
+                        <div class="progress-bar">
+                            <div style="width: 80%;"></div>
+                        </div>
+
+                    </div>
+
+                    <button>
+                        View Course
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+
+                </div>
+
+
+                <!-- Course 6 -->
+                <div class="course-card">
+
+                    <div class="course-top">
+                        <div class="course-icon cyan">
+                            <i class="fa-solid fa-comments"></i>
+                        </div>
+
+                        <span class="semester">
+                            SEM 1
+                        </span>
+                    </div>
+
+                    <h3>Communication Skills</h3>
+
+                    <p>
+                        Improve communication, presentation, writing and
+                        professional skills for academic and career growth.
+                    </p>
+
+                    <div class="course-info">
+                        <span>
+                            <i class="fa-solid fa-clock"></i>
+                            2 Credits
+                        </span>
+
+                        <span>
+                            <i class="fa-solid fa-user"></i>
+                            Faculty
+                        </span>
+                    </div>
+
+                    <div class="progress-area">
+
+                        <div class="progress-text">
+                            <span>Progress</span>
+                            <strong>60%</strong>
+                        </div>
+
+                        <div class="progress-bar">
+                            <div style="width: 60%;"></div>
+                        </div>
+
+                    </div>
+
+                    <button>
+                        View Course
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</body>
+</html>

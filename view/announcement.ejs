@@ -34,32 +34,32 @@
                 <span>Dashboard</span>
             </a>
 
-            <a href="/profile" class="nav-item">
+            <a href="/main/profile" class="nav-item">
                 <i class="fa-solid fa-user"></i>
                 <span>Profile</span>
             </a>
 
-            <a href="/events" class="nav-item">
+            <a href="/main/events" class="nav-item">
                 <i class="fa-solid fa-calendar-days"></i>
                 <span>Events</span>
             </a>
 
-            <a href="/community" class="nav-item">
+            <a href="/main/community" class="nav-item">
                 <i class="fa-solid fa-users"></i>
                 <span>Community</span>
             </a>
 
-            <a href="/announcement" class="nav-item active">
+            <a href="/main/announcement" class="nav-item active">
                 <i class="fa-solid fa-bullhorn"></i>
                 <span>Announcements</span>
             </a>
 
-            <a href="/ai" class="nav-item">
+            <a href="/main/AI-helper" class="nav-item">
                 <i class="fa-solid fa-robot"></i>
                 <span>AI Assistant</span>
             </a>
 
-            <a href="/resources" class="nav-item">
+            <a href="/main/resources" class="nav-item">
                 <i class="fa-solid fa-book"></i>
                 <span>Resources</span>
             </a>
@@ -68,12 +68,12 @@
 
         <div class="sidebar-bottom">
 
-            <a href="/settings" class="nav-item">
+            <a href="/main/settings" class="nav-item">
                 <i class="fa-solid fa-gear"></i>
                 <span>Settings</span>
             </a>
 
-            <a href="/logout" class="nav-item logout">
+            <a href="/main/logout" class="nav-item logout">
                 <i class="fa-solid fa-right-from-bracket"></i>
                 <span>Logout</span>
             </a>
@@ -102,11 +102,13 @@
                 </button>
 
                 <div class="user-profile">
-                    <div class="avatar">S</div>
+                    <div class="avatar">
+                            <img src="/uploads/<%= user.photo %>">
+                    </div>
 
                     <div class="user-info">
-                        <strong>Santu Parihar</strong>
-                        <span>Data Science</span>
+                        <strong><%= user.name %></strong>
+                        <span><%= user.course %></span>
                     </div>
                 </div>
 

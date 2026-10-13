@@ -260,31 +260,36 @@ input {
     font-size: 11px;
 }
 
-.avatar,
-.big-avatar {
-    display: grid;
-    place-items: center;
-
+.avatar{
+    height : 50px;
+    width : 50px;
+    border : 1px solid white;
     border-radius: 50%;
+}
 
-    font-weight: 800;
 
-    color: white;
+.big-avatar {
+ 
+    height: 60px;
+    width : 60px;
+    border-radius: 50%;
+    overflow : hidden;
+}
 
-    background:
-        linear-gradient(
-            135deg,
-            #1376c9,
-            #8c5b43
-        );
+.big-avatar img{
+        height:  100%;
+    width : 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    overflow: hidden;
+}
 
-    border:
-        2px solid rgba(
-            128,
-            218,
-            255,
-            0.25
-        );
+.avatar img{
+    height:  100%;
+    width : 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    overflow: hidden;
 }
 
 
