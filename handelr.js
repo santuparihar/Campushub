@@ -9,7 +9,7 @@ const {restrictologin , checkUser , checkauthorization} = require('./middlewares
 const  {storage} = require('./middlewares/photo');
 const router = express.Router();
 
-router.get('/' , restrictologin , handelserve);
+router.get('/' , handelserve);
 
 router.post('/signup' ,  handelsignup);
 router.post('/login' ,  handellogin);
